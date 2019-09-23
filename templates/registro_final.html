@@ -5,14 +5,16 @@
 <!-- Tengo que meterlo en un bloque para que aparezca esta parte  -->
 {% block main %} 
     
-SU LISTA
+<h3>Gastos totales</h3>
  
-<ul>
+    <ul>
         {% for key, value in listado.items() %}
-        <h1>Fecha: {{key}} Importe: {{value}} euros</h1>
-        <h2></h2>
+        <h4>Fecha: {{key}}, Importe: {{value}} euros</h4>
+        
      {% endfor %}
     </ul> 
 
+    <button>
     <a href="{{url_for('home')}}">Volver al formulario</a>
+    </button>   
 {% endblock %}

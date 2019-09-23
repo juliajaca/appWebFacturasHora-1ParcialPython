@@ -5,10 +5,18 @@
 {% block main %} 
     
   
-<h1>Registro</h1>
+<h3>Acaba de registrar:</h3>
+<ul>
+<h4>A fecha {{fecha}}</h4>
+<h4>Ha gastado {{importe}} euros</h4>
+</ul>
 
-<h1>A {{fecha}}</h1>
-<h1>Ha gastado {{importe}} euros</h1>
-<a href="{{url_for('registro_final')}}">Registrar y ver todo</a>
+<button>
+<a href="{{url_for('registro_final')}}"> Ver todo</a>
+</button>
+
+<button>
+<a href="{{url_for('home')}}"> Volver</a>
+</button>
 
 {% endblock %}
