@@ -1,0 +1,23 @@
+
+{% extends 'base.html' %}
+
+
+<!-- Tengo que meterlo en un bloque para que aparezca esta parte  -->
+{% block main %} 
+    
+    <!-- FORMULARIO DE LOGIN-->
+    <div class="container">
+
+        <form action="{{ url_for('home') }}" method="POST">
+            <!-- #recuperamos las variables -->
+            <!-- {{ login_form.fecha}}
+            {{ login_form.fecha.label }} 
+            {{ login_form.importe}}
+            {{ login_form.importe.label }}
+            {{login_form.enviar}} -->
+        </form>
+        {{ wtf.quick_form(login_form) }}
+
+    </div>
+
+{% endblock %}

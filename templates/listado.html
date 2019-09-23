@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+
+<!-- Tengo que meterlo en un bloque para que aparezca esta parte  -->
+{% block main %} 
+    
+  
+<h1>Registro</h1>
+
+<h1>A {{fecha}}</h1>
+<h1>Ha gastado {{importe}} euros</h1>
+<a href="{{url_for('registro_final')}}">Registrar y ver todo</a>
+
+{% endblock %}
